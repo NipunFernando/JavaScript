@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+</head>
+<body>
+    <h1>Learning JavaScript on Coursera</h1>
+
+    <p id="p1">This is just a line of text in paragrahp tags.</p>
+
+    <!-- Adding a button -->
+    <button id="btn_donotclick">Do not click!</button>
+    <script>
+        // var firstProgram = "Hello, World!";
+        // //console.log(firstProgram);
+
+        // var colours = new Array('red','blue','green','black');
+
+        // var colour = colours[2];
+
+
+        // if - else if - else in JS
+
+        // if(colour=='red'){
+        //     console.log("The colour is red!");
+        // }
+        // else if(colour=='blue'){
+        //     console.log("The colour is blue!");
+        // }
+        // else if(colour=='green'){
+        //     console.log("The colour is green!");
+        // }
+        // else if(colour=='black'){
+        //     console.log("The colour is black!");
+        // }
+        // else{
+        //     console.log("Colour undefined!");
+        // }
+
+        // swithch in JS
+
+        // switch(colour){
+        //     case 'red' : console.log("The colour is red!"); break;
+        //     case 'green' : console.log("The colour is green!"); break;
+        // }
+
+        // for loop in JS
+
+        // for(var i=0; i<colours.length; i++){
+        //     console.log(colours[i]);
+        // }
+
+        // for ... of loop in JS
+
+        // for(let colour of colours){
+        //     console.log(colour);
+        // }
+
+        // String methods in JS
+
+        // var myString = "This is just a string!";
+
+        // console.log(myString);
+
+        // var myCapitalizedString =  myString.toUpperCase();
+
+        // console.log(myCapitalizedString);
+
+
+        // var text = "This text contains the word 'Adeepa', which is actually not a word but my name.";
+        // console.log(text);
+
+        // var startIndexOfMyName = text.search('Adeepa');
+        // console.log(startIndexOfMyName);
+
+        // var myNameLength = 'Adeepa'.length;
+        // console.log(myNameLength);
+
+        // var myName = text.substring(startIndexOfMyName,startIndexOfMyName+myNameLength);
+        // console.log(myName);
+
+        // var modifiedText = text.replace(myName,myName.toUpperCase());
+        // console.log(modifiedText);
+
+
+
+        // String concatinating in JS
+
+        // var foodArray = new Array('Rice', 'Pizza', 'Pie', 'Roti');
+        // var statement = "I would like to have a ";
+        // var staementWithFood = statement.concat(foodArray[2]);
+        // console.log(staementWithFood);
+        // // or
+        // console.log(`${statement} ${foodArray[1]} !`);
+
+        // Now loop
+
+        // for(var food of foodArray){
+        //     console.log(`${statement} ${food} !`);
+        // }
+
+
+        // Math.random() function in JS
+
+        //console.log(Math.round(Math.random()*10));
+
+
+        // Function to generate random number for a given range
+        // console.log("Start ...");
+
+        // function randNum(min, max){
+        //     var randFloat = Math.random(); // First, get the random number between 0 - 1
+        //     //console.log(randFloat);
+        //     var range = max - min; // Get the range
+        //     //var minLength = 2;//min.toString();
+        //     var minLength = 0;
+        //     var minCopy = min;
+        //     while(minCopy>1){
+        //         minLength++;
+        //         minCopy/= 10;
+        //     }
+        //     var randNum = randFloat*Math.pow(10,minLength);
+        //     //console.log(randNum);
+
+        //     while(randNum < min){
+        //         randNum += range;
+        //     }
+        //     while(randNum > max){
+        //         randNum -= range;
+        //     }
+
+        //     return Math.round(randNum);
+        // }
+
+
+        // console.log(randNum(52,79));
+        // console.log(randNum(52,792));
+
+        // Better function for above task
+
+        // function randNum(min, max){
+        //     return Math.floor((max-min+1)*Math.random())+min;
+        // }
+
+        // Anonymous function
+        // var randNum = function(min,max){
+        //     return Math.floor((max-min+1)*Math.random())+min;
+        // }
+
+        //Arrow function
+        // var randNum = (min,max) => Math.floor((max-min+1)*Math.random())+min;
+
+        // console.log(randNum(57,89));
+
+
+        // DOM in JS
+
+        // getElementByID()
+        //document.getElementById("p1").style.color = 'red';
+
+
+
+
+
+        // Button click action
+        var myBtn = document.getElementById('btn_donotclick');
+        myBtn.onclick = showAlert;
+
+
+        function showAlert(){
+            alert("Oh no you didn't!")
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
